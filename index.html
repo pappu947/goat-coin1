@@ -57,13 +57,43 @@ font-family:'Bebas Neue',sans-serif;
 color:#ffbf00;
 }
 
+.top-buttons{
+    display:flex;
+    gap:12px;
+    align-items:center;
+}
+
+.social-btn{
+    text-decoration:none;
+    padding:14px 22px;
+    border-radius:10px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.telegram{
+    background:#229ED9;
+    color:white;
+}
+
+.twitter{
+    background:#000;
+    color:white;
+    border:1px solid #444;
+}
+
+.social-btn:hover,
+.buy-btn:hover{
+    transform:translateY(-2px);
+}
+
 .buy-btn{
-background:#ffbf00;
-color:black;
-padding:14px 28px;
-border-radius:10px;
-font-weight:800;
-text-decoration:none;
+    background:#ffbf00;
+    color:black;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:800;
+    text-decoration:none;
 }
 
 .hero{
@@ -236,7 +266,21 @@ I AM THE REAL GOAT<br>
 </div>
 </div>
 
-<a href="#" class="buy-btn">BUY $GOAT</a>
+<div class="top-buttons">
+
+    <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="social-btn telegram">
+        📢 Telegram
+    </a>
+
+    <a href="https://x.com/YOUR_TWITTER" target="_blank" class="social-btn twitter">
+        🐦 Twitter
+    </a>
+
+    <a href="#" class="buy-btn">
+        BUY $GOAT
+    </a>
+
+</div>
 
 </header>
 
